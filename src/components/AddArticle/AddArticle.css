@@ -1,16 +1,18 @@
 .add-article {
   width: 30rem;
-  height: 8rem;
+  height: 12rem;
   margin: auto;
   margin-top: 1rem;
-  padding: 1rem;
+  margin-bottom: 2em;
+  padding: 0 3rem 0 3rem;
   background: #f5f6f7;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 0.3rem;
+  border-radius: 10px;
   position: relative;
+  border-bottom: 1px solid black;
 }
 
 .add-article input {
@@ -22,17 +24,29 @@
   border: 1px solid #333;
   border-radius: 0.3rem;
 }
-.xd{
-  position:relative;
+.add-article-titleInput {
+  position: relative;
 }
-.xd::after {
+.add-article-titleInput::after {
   content: attr(data-required);
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    font-size: 15px;
-    transform: translateY(-50%);
-    color: #ccc;
+  position: absolute;
+  right: 8px;
+  top: 40%;
+  font-size: 0.8em;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+.add-article-bodyInput {
+  position: relative;
+}
+.add-article-bodyInput::after {
+  content: attr(data-required);
+  position: absolute;
+  right: 8px;
+  top: 40%;
+  font-size: 0.8em;
+  transform: translateY(-50%);
+  color: #ccc;
 }
 .add-article button {
   width: 21rem;

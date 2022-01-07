@@ -17,22 +17,29 @@ const AddArticle = ({ saveArticle }) => {
 
   return (
     <form onSubmit={addNewArticle} className='add-article'>
-      <div className="xd" data-required="(required)" >
-      <input
-        type='text'
-        id='title'
-        placeholder='Title (Max. 12 letters)'
-        onChange={handleArticleData}
-        className='inputxd'
-      />
+      <div
+        className='add-article-titleInput'
+        data-required='(Max. 12 characters)'
+      >
+        <input
+          type='text'
+          id='title'
+          placeholder='Title '
+          onChange={handleArticleData}
+        />
       </div>
-      <input
-        type='text'
-        id='body'
-        placeholder='Body (Max. 500 letters)'
-        onChange={handleArticleData}
-        data-required='description'
-      />
+      <div
+        className='add-article-bodyInput'
+        data-required='(Max. 500 characters)'
+      >
+        <input
+          type='text'
+          id='body'
+          placeholder='Body'
+          onChange={handleArticleData}
+          data-required='description'
+        />
+      </div>
       <button>Add article</button>
     </form>
   );

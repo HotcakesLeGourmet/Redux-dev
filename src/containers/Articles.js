@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import Article from '../components/Article/Article';
 import AddArticle from '../components/AddArticle/AddArticle';
-import { simulateHttpRequest } from '../store/actionCreators';
+import { addArticle } from '../store/actionCreators';
 
 const Articles = ({ articles, saveArticle }) => (
   <div>
@@ -22,7 +22,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    saveArticle: (article) => dispatch(simulateHttpRequest(article)),
+    saveArticle: (article) => dispatch(addArticle(article)),
   };
 };
 

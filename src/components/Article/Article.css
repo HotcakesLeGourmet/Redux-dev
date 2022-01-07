@@ -46,4 +46,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 4;
+  border-radius: 10px;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
 }
