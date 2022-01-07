@@ -1,0 +1,49 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  width: 30rem;
+  margin: auto;
+  background-color: rgb(184, 230, 184);
+  border-bottom: 1px solid #333;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.article button {
+  width: 4rem;
+  height: 1.3rem;
+  padding: 0.15rem;
+  border: 1px solid #333;
+  background: #333;
+  color: #eee;
+  border-radius: 0.3rem;
+}
+.article h1 {
+  font-size: 20px;
+  max-width: 20%;
+  max-height: 4em;
+  padding: 0.3em;
+  text-transform: capitalize;
+  color: rgb(95, 218, 177);
+  background: rgb(80, 105, 80);
+  border-radius: 7px;
+  align-self: center;
+}
+
+.article p {
+  background-color: yellow;
+  max-width: 50%;
+  /**Major Properties**/
+  overflow: hidden;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
